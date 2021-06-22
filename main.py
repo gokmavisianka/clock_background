@@ -12,6 +12,7 @@ class ClockBacground:
         H, M, S = int(self.time[0:2]), int(self.time[3:5]), int(self.time[6:8])
         if len(str(S)) == 1: S = "0" + str(S)
         if len(str(M)) == 1: M = "0" + str(M)
+        if len(str(H)) == 1: H = "0" + str(H)
         return f"{H}.{M}.{S}"
 
     def create_background(self):
