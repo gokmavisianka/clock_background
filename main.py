@@ -2,8 +2,10 @@ from datetime import datetime
 import numpy as np
 import cv2
 import ctypes
-import time
+import pygame
 import os
+
+clock = pygame.time.Clock()
 
 
 class ClockBacground:
@@ -38,7 +40,7 @@ CB = ClockBacground()
 def main():
     while True:
         CB.set_background()
-        time.sleep(0.95)
+        clock.tick(1)
 
 
 main()
